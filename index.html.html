@@ -1,0 +1,1688 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Saatvachan Wedding | Wedding Photography</title>
+
+<style>
+
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Georgia,serif;
+    background:#f5f0e6;
+    color:#29342b;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+
+    padding:18px 7%;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    background:rgba(245,240,230,.94);
+    backdrop-filter:blur(12px);
+
+    border-bottom:1px solid #d8cdbb;
+}
+
+.logo{
+    font-size:25px;
+    letter-spacing:4px;
+    font-weight:bold;
+    color:#29342b;
+}
+
+.logo span{
+    color:#a66a4c;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:30px;
+}
+
+nav a{
+    color:#29342b;
+    text-decoration:none;
+    font-family:Arial,sans-serif;
+    font-size:14px;
+}
+
+nav a:hover{
+    color:#a66a4c;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:130px 8%;
+
+    background:
+        linear-gradient(
+            rgba(37,57,44,.38),
+            rgba(37,57,44,.62)
+        ),
+        url("https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=2200&q=90");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content{
+    max-width:900px;
+    color:white;
+}
+
+.hero small{
+    letter-spacing:7px;
+    font-family:Arial,sans-serif;
+    text-transform:uppercase;
+    color:#f1dfb5;
+}
+
+.hero h1{
+    font-size:clamp(55px,9vw,105px);
+    line-height:.95;
+    margin:25px 0;
+}
+
+.hero h1 span{
+    color:#e7c98b;
+}
+
+.hero p{
+    max-width:650px;
+    margin:auto;
+
+    font-family:Arial,sans-serif;
+    font-size:18px;
+    line-height:1.7;
+
+    color:#f3eee4;
+}
+
+.hero-btn{
+    display:inline-block;
+
+    margin-top:35px;
+
+    padding:15px 34px;
+
+    background:#e1b978;
+    color:#29342b;
+
+    text-decoration:none;
+
+    font-family:Arial,sans-serif;
+    font-weight:bold;
+
+    transition:.3s;
+}
+
+.hero-btn:hover{
+    background:#fff;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.intro{
+    padding:100px 8%;
+    text-align:center;
+}
+
+.intro small{
+    color:#a66a4c;
+    letter-spacing:5px;
+    font-family:Arial,sans-serif;
+}
+
+.intro h2{
+    font-size:52px;
+    margin:15px 0;
+}
+
+.intro h2 span{
+    color:#a66a4c;
+}
+
+.intro p{
+    max-width:720px;
+    margin:auto;
+
+    color:#667067;
+
+    font-family:Arial,sans-serif;
+    line-height:1.8;
+}
+
+
+/* =========================
+   WEDDING CARDS
+========================= */
+
+.events{
+    padding:0 8% 110px;
+
+    display:grid;
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:18px;
+}
+
+.event{
+    height:390px;
+
+    position:relative;
+    overflow:hidden;
+
+    border-radius:3px;
+}
+
+.event img{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.6s;
+}
+
+.event:hover img{
+    transform:scale(1.08);
+}
+
+.event-info{
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+
+    padding:60px 20px 20px;
+
+    color:white;
+
+    background:
+        linear-gradient(
+            transparent,
+            rgba(20,35,26,.9)
+        );
+}
+
+.event-info h3{
+    font-size:25px;
+}
+
+.event-info p{
+    margin-top:5px;
+    font-family:Arial,sans-serif;
+    color:#e7dfd0;
+}
+
+
+/* =========================
+   BOOKING SECTION
+========================= */
+
+.booking-section{
+    padding:120px 7%;
+
+    background:#e8e0d0;
+}
+
+.booking-heading{
+    text-align:center;
+
+    max-width:800px;
+
+    margin:0 auto 65px;
+}
+
+.booking-heading small{
+    color:#a66a4c;
+    letter-spacing:5px;
+    font-family:Arial,sans-serif;
+}
+
+.booking-heading h2{
+    font-size:56px;
+    margin:15px 0;
+}
+
+.booking-heading h2 span{
+    color:#a66a4c;
+}
+
+.booking-heading p{
+    color:#697168;
+    font-family:Arial,sans-serif;
+    line-height:1.7;
+}
+
+
+/* =========================
+   BOOKING CONTAINER
+========================= */
+
+.booking-container{
+    max-width:1150px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:.75fr 1.25fr;
+
+    background:#fbf8f0;
+
+    border:1px solid #d6cbb9;
+
+    box-shadow:
+        0 25px 70px rgba(60,50,35,.12);
+}
+
+
+/* =========================
+   LEFT INFO
+========================= */
+
+.booking-info{
+    padding:55px 40px;
+
+    background:#334b3b;
+
+    color:white;
+}
+
+.booking-number{
+    font-size:85px;
+    line-height:1;
+
+    color:#dcb77a;
+
+    opacity:.35;
+}
+
+.booking-info h3{
+    font-size:37px;
+    line-height:1.15;
+
+    margin:10px 0 20px;
+}
+
+.booking-info h3 span{
+    color:#e2c58e;
+}
+
+.booking-info p{
+    color:#d8ddd8;
+
+    font-family:Arial,sans-serif;
+
+    line-height:1.8;
+}
+
+.features{
+    margin-top:35px;
+}
+
+.feature{
+    display:flex;
+    gap:12px;
+    align-items:center;
+
+    margin:16px 0;
+
+    font-family:Arial,sans-serif;
+}
+
+.feature-icon{
+    width:28px;
+    height:28px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border:1px solid #dcb77a;
+
+    color:#dcb77a;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.form-area{
+    padding:50px;
+}
+
+.form-title{
+    margin-bottom:30px;
+}
+
+.form-title h3{
+    font-size:31px;
+    color:#29342b;
+}
+
+.form-title p{
+    margin-top:5px;
+
+    color:#899087;
+
+    font-family:Arial,sans-serif;
+    font-size:13px;
+}
+
+.form-row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:18px;
+}
+
+.field{
+    margin-bottom:19px;
+}
+
+.field label{
+    display:block;
+
+    margin-bottom:8px;
+
+    color:#445047;
+
+    font-family:Arial,sans-serif;
+    font-size:13px;
+}
+
+.field label span{
+    color:#a66a4c;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+
+    padding:14px;
+
+    background:#f8f4eb;
+
+    color:#29342b;
+
+    border:1px solid #d2c7b5;
+
+    outline:none;
+
+    font-family:Arial,sans-serif;
+
+    transition:.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    border-color:#8caa91;
+
+    box-shadow:
+        0 0 0 2px rgba(140,170,145,.15);
+}
+
+textarea{
+    min-height:110px;
+    resize:vertical;
+}
+
+
+/* =========================
+   FUNCTION CARDS
+========================= */
+
+.section-label{
+    color:#445047;
+
+    font-family:Arial,sans-serif;
+
+    font-size:13px;
+
+    margin-bottom:10px;
+}
+
+.functions{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+
+    gap:8px;
+
+    margin-bottom:20px;
+}
+
+.function{
+    position:relative;
+}
+
+.function input{
+    position:absolute;
+    opacity:0;
+}
+
+.function label{
+    display:block;
+
+    text-align:center;
+
+    padding:13px 5px;
+
+    background:#f8f4eb;
+
+    border:1px solid #d2c7b5;
+
+    color:#697168;
+
+    cursor:pointer;
+
+    font-family:Arial,sans-serif;
+
+    transition:.3s;
+}
+
+.function input:checked + label{
+    background:#e5eee4;
+    border-color:#78917d;
+    color:#334b3b;
+}
+
+
+/* =========================
+   PACKAGES
+========================= */
+
+.packages{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+
+    gap:8px;
+
+    margin-bottom:20px;
+}
+
+.package{
+    position:relative;
+}
+
+.package input{
+    position:absolute;
+    opacity:0;
+}
+
+.package label{
+    display:block;
+
+    text-align:center;
+
+    padding:13px 5px;
+
+    background:#f8f4eb;
+
+    border:1px solid #d2c7b5;
+
+    cursor:pointer;
+}
+
+.package label strong{
+    display:block;
+    color:#334b3b;
+}
+
+.package label small{
+    color:#9b8872;
+}
+
+.package input:checked + label{
+    border-color:#a66a4c;
+    background:#f5e8df;
+}
+
+.package input:checked + label strong{
+    color:#a66a4c;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.submit-btn{
+    width:100%;
+
+    padding:17px;
+
+    border:none;
+
+    background:#334b3b;
+
+    color:white;
+
+    font-size:16px;
+
+    font-family:Arial,sans-serif;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.submit-btn:hover{
+    background:#a66a4c;
+}
+
+.success{
+    display:none;
+
+    margin-top:18px;
+
+    padding:14px;
+
+    text-align:center;
+
+    border:1px solid #78917d;
+
+    color:#46634d;
+
+    font-family:Arial,sans-serif;
+}
+
+.note{
+    text-align:center;
+
+    margin-top:12px;
+
+    color:#8a8a80;
+
+    font-family:Arial,sans-serif;
+
+    font-size:11px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    padding:30px 7%;
+
+    display:flex;
+    justify-content:space-between;
+
+    background:#293c30;
+
+    color:#c5cec6;
+
+    font-family:Arial,sans-serif;
+}
+
+footer strong{
+    color:white;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:900px){
+
+    nav ul{
+        display:none;
+    }
+
+    .events{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .booking-container{
+        grid-template-columns:1fr;
+    }
+
+    .form-row{
+        grid-template-columns:1fr;
+    }
+
+    .booking-info{
+        border-bottom:1px solid #516758;
+    }
+
+    .booking-heading h2{
+        font-size:43px;
+    }
+}
+
+@media(max-width:550px){
+
+    .events{
+        grid-template-columns:1fr;
+    }
+
+    .form-area{
+        padding:28px 18px;
+    }
+
+    .functions,
+    .packages{
+        grid-template-columns:1fr 1fr;
+    }
+
+    footer{
+        flex-direction:column;
+        gap:10px;
+        text-align:center;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<nav>
+
+    <div class="logo">
+        SAAT<span>VACHAN</span>
+    </div>
+
+    <ul>
+
+        <li>
+            <a href="#home">Home</a>
+        </li>
+
+        <li>
+            <a href="#story">Our Story</a>
+        </li>
+
+        <li>
+            <a href="#booking">Book Appointment</a>
+        </li>
+
+    </ul>
+
+</nav>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <small>
+            Saatvachan Wedding
+        </small>
+
+        <h1>
+            Seven Vows.
+            <br>
+            One <span>Forever.</span>
+        </h1>
+
+        <p>
+            Beautiful Indian wedding photography
+            that captures your traditions, emotions
+            and the little moments you'll remember
+            forever.
+        </p>
+
+        <a
+            href="#booking"
+            class="hero-btn"
+        >
+            ✦ Book Your Wedding Date
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= STORY ================= -->
+
+<section class="intro" id="story">
+
+    <small>
+        THE SAATVACHAN STORY
+    </small>
+
+    <h2>
+        Moments that become
+        <span>memories.</span>
+    </h2>
+
+    <p>
+        Your wedding isn't just one day.
+        It's a collection of emotions,
+        traditions, laughter, family and love.
+        We photograph every chapter naturally
+        and beautifully.
+    </p>
+
+</section>
+
+
+<!-- ================= EVENTS ================= -->
+
+<section class="events">
+
+    <div class="event">
+
+        <img
+        src="https://images.unsplash.com/photo-1594736797933-d0c3a4f1b8d7?auto=format&fit=crop&w=1000&q=85"
+        >
+
+        <div class="event-info">
+
+            <h3>Mehendi</h3>
+
+            <p>
+                Colours & laughter
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="event">
+
+        <img
+        src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1000&q=85"
+        >
+
+        <div class="event-info">
+
+            <h3>Haldi</h3>
+
+            <p>
+                Happiness & traditions
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="event">
+
+        <img
+        src="https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=1000&q=85"
+        >
+
+        <div class="event-info">
+
+            <h3>Wedding</h3>
+
+            <p>
+                Seven vows, one forever
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="event">
+
+        <img
+        src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1000&q=85"
+        >
+
+        <div class="event-info">
+
+            <h3>Reception</h3>
+
+            <p>
+                Celebrate your love
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= BOOKING ================= -->
+
+<section
+    class="booking-section"
+    id="booking"
+>
+
+
+    <div class="booking-heading">
+
+        <small>
+            RESERVE YOUR DATE
+        </small>
+
+        <h2>
+            Book Your
+            <span>Wedding Appointment</span>
+        </h2>
+
+        <p>
+            Tell us about your wedding and
+            we'll personally get in touch with
+            you about availability and packages.
+        </p>
+
+    </div>
+
+
+
+    <div class="booking-container">
+
+
+        <!-- LEFT -->
+
+        <div class="booking-info">
+
+            <div class="booking-number">
+                01
+            </div>
+
+            <h3>
+                Let's capture
+                <span>your forever.</span>
+            </h3>
+
+            <p>
+                From Mehendi and Haldi to the
+                pheras and Vidaai, we'll preserve
+                every emotion of your special day.
+            </p>
+
+
+            <div class="features">
+
+                <div class="feature">
+
+                    <div class="feature-icon">
+                        ✦
+                    </div>
+
+                    Candid Wedding Photography
+
+                </div>
+
+
+                <div class="feature">
+
+                    <div class="feature-icon">
+                        ✦
+                    </div>
+
+                    Cinematic Wedding Films
+
+                </div>
+
+
+                <div class="feature">
+
+                    <div class="feature-icon">
+                        ✦
+                    </div>
+
+                    Pre-Wedding Stories
+
+                </div>
+
+
+                <div class="feature">
+
+                    <div class="feature-icon">
+                        ✦
+                    </div>
+
+                    Premium Wedding Albums
+
+                </div>
+
+
+                <div class="feature">
+
+                    <div class="feature-icon">
+                        ✦
+                    </div>
+
+                    Destination Weddings
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FORM -->
+
+        <div class="form-area">
+
+            <div class="form-title">
+
+                <h3>
+                    Wedding Enquiry
+                </h3>
+
+                <p>
+                    Fields marked * are required
+                </p>
+
+            </div>
+
+
+            <form id="weddingForm">
+
+
+                <!-- NAMES -->
+
+                <div class="form-row">
+
+                    <div class="field">
+
+                        <label>
+                            Bride's Name <span>*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="bride"
+                            placeholder="Bride's name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label>
+                            Groom's Name <span>*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="groom"
+                            placeholder="Groom's name"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- CONTACT -->
+
+                <div class="form-row">
+
+                    <div class="field">
+
+                        <label>
+                            WhatsApp Number <span>*</span>
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="9876543210"
+                            pattern="[0-9]{10}"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label>
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="your@email.com"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- DATE + CITY -->
+
+                <div class="form-row">
+
+                    <div class="field">
+
+                        <label>
+                            Wedding Date <span>*</span>
+                        </label>
+
+                        <input
+                            type="date"
+                            id="date"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label>
+                            Wedding City <span>*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="city"
+                            placeholder="Mumbai"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- VENUE -->
+
+                <div class="field">
+
+                    <label>
+                        Wedding Venue
+                    </label>
+
+                    <input
+                        type="text"
+                        id="venue"
+                        placeholder="Hotel / Banquet / Resort"
+                    >
+
+                </div>
+
+
+                <!-- FUNCTIONS -->
+
+                <div class="section-label">
+                    Select your wedding functions
+                </div>
+
+                <div class="functions">
+
+
+                    <div class="function">
+
+                        <input
+                            type="checkbox"
+                            id="mehendi"
+                            value="Mehendi"
+                        >
+
+                        <label for="mehendi">
+                            🌿 Mehendi
+                        </label>
+
+                    </div>
+
+
+                    <div class="function">
+
+                        <input
+                            type="checkbox"
+                            id="haldi"
+                            value="Haldi"
+                        >
+
+                        <label for="haldi">
+                            🌼 Haldi
+                        </label>
+
+                    </div>
+
+
+                    <div class="function">
+
+                        <input
+                            type="checkbox"
+                            id="sangeet"
+                            value="Sangeet"
+                        >
+
+                        <label for="sangeet">
+                            💃 Sangeet
+                        </label>
+
+                    </div>
+
+
+                    <div class="function">
+
+                        <input
+                            type="checkbox"
+                            id="wedding"
+                            value="Wedding"
+                        >
+
+                        <label for="wedding">
+                            💍 Wedding
+                        </label>
+
+                    </div>
+
+
+                    <div class="function">
+
+                        <input
+                            type="checkbox"
+                            id="reception"
+                            value="Reception"
+                        >
+
+                        <label for="reception">
+                            🥂 Reception
+                        </label>
+
+                    </div>
+
+
+                    <div class="function">
+
+                        <input
+                            type="checkbox"
+                            id="prewedding"
+                            value="Pre-Wedding"
+                        >
+
+                        <label for="prewedding">
+                            📸 Pre-Wedding
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PACKAGES -->
+
+                <div class="section-label">
+                    Choose your photography collection
+                </div>
+
+                <div class="packages">
+
+
+                    <div class="package">
+
+                        <input
+                            type="radio"
+                            name="package"
+                            id="classic"
+                            value="Classic"
+                            checked
+                        >
+
+                        <label for="classic">
+
+                            <strong>
+                                Classic
+                            </strong>
+
+                            <small>
+                                ₹49,999
+                            </small>
+
+                        </label>
+
+                    </div>
+
+
+                    <div class="package">
+
+                        <input
+                            type="radio"
+                            name="package"
+                            id="royal"
+                            value="Royal"
+                        >
+
+                        <label for="royal">
+
+                            <strong>
+                                Royal
+                            </strong>
+
+                            <small>
+                                ₹89,999
+                            </small>
+
+                        </label>
+
+                    </div>
+
+
+                    <div class="package">
+
+                        <input
+                            type="radio"
+                            name="package"
+                            id="premium"
+                            value="Premium"
+                        >
+
+                        <label for="premium">
+
+                            <strong>
+                                Premium
+                            </strong>
+
+                            <small>
+                                ₹1,49,999
+                            </small>
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <!-- EXTRA DETAILS -->
+
+                <div class="form-row">
+
+                    <div class="field">
+
+                        <label>
+                            Approx. Guests
+                        </label>
+
+                        <select id="guests">
+
+                            <option>
+                                Select
+                            </option>
+
+                            <option>
+                                Below 100
+                            </option>
+
+                            <option>
+                                100 - 300
+                            </option>
+
+                            <option>
+                                300 - 500
+                            </option>
+
+                            <option>
+                                500 - 1000
+                            </option>
+
+                            <option>
+                                1000+
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label>
+                            Preferred Contact
+                        </label>
+
+                        <select id="contact">
+
+                            <option>
+                                WhatsApp
+                            </option>
+
+                            <option>
+                                Phone Call
+                            </option>
+
+                            <option>
+                                Email
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- MESSAGE -->
+
+                <div class="field">
+
+                    <label>
+                        Tell us about your wedding
+                    </label>
+
+                    <textarea
+                        id="message"
+                        placeholder="Tell us about your wedding, venue, number of days or special requirements..."
+                    ></textarea>
+
+                </div>
+
+
+                <!-- BUTTON -->
+
+                <button
+                    type="submit"
+                    class="submit-btn"
+                >
+                    ✦ Request My Appointment
+                </button>
+
+
+                <div
+                    id="success"
+                    class="success"
+                >
+                    ✓ Appointment details prepared.
+                    Opening WhatsApp...
+                </div>
+
+
+                <div class="note">
+                    Your information is used only
+                    for your wedding enquiry.
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div>
+        © 2026
+        <strong>
+            Saatvachan Wedding
+        </strong>
+    </div>
+
+    <div>
+        Indian Wedding Photography
+    </div>
+
+</footer>
+
+
+<script>
+
+/* ==========================================
+   APNA WHATSAPP NUMBER YAHAN DALO
+   Example:
+   9876543210
+   becomes:
+   919876543210
+========================================== */
+
+const whatsappNumber =
+    "918097608074";
+
+
+/* ==========================================
+   FORM SUBMIT
+========================================== */
+
+document
+.getElementById("weddingForm")
+.addEventListener(
+    "submit",
+    function(event){
+
+        event.preventDefault();
+
+
+        const bride =
+            document.getElementById("bride").value;
+
+        const groom =
+            document.getElementById("groom").value;
+
+        const phone =
+            document.getElementById("phone").value;
+
+        const email =
+            document.getElementById("email").value;
+
+        const date =
+            document.getElementById("date").value;
+
+        const city =
+            document.getElementById("city").value;
+
+        const venue =
+            document.getElementById("venue").value;
+
+        const guests =
+            document.getElementById("guests").value;
+
+        const contact =
+            document.getElementById("contact").value;
+
+        const message =
+            document.getElementById("message").value;
+
+
+        /* FUNCTIONS */
+
+        const functions =
+            Array.from(
+                document.querySelectorAll(
+                    ".function input:checked"
+                )
+            )
+            .map(
+                item => item.value
+            );
+
+
+        /* PACKAGE */
+
+        const packageSelected =
+            document.querySelector(
+                'input[name="package"]:checked'
+            ).value;
+
+
+        /* DATE */
+
+        let weddingDate = date;
+
+        if(date){
+
+            weddingDate =
+                new Date(
+                    date + "T00:00:00"
+                ).toLocaleDateString(
+                    "en-IN",
+                    {
+                        day:"2-digit",
+                        month:"long",
+                        year:"numeric"
+                    }
+                );
+
+        }
+
+
+        const functionText =
+            functions.length
+            ? functions.join(", ")
+            : "Not selected";
+
+
+        /* ==================================
+           WHATSAPP MESSAGE
+        ================================== */
+
+        const whatsappMessage =
+
+`🌿 *SAATVACHAN WEDDING*
+*Wedding Appointment Request*
+
+Hello Saatvachan Wedding,
+
+I would like to enquire about wedding photography.
+
+━━━━━━━━━━━━━━━━━━
+
+💑 *COUPLE*
+
+Bride: ${bride}
+Groom: ${groom}
+
+📱 WhatsApp: ${phone}
+
+📧 Email: ${email || "Not provided"}
+
+━━━━━━━━━━━━━━━━━━
+
+📅 *WEDDING DATE*
+
+${weddingDate}
+
+📍 City: ${city}
+
+🏛️ Venue: ${venue || "Not decided"}
+
+━━━━━━━━━━━━━━━━━━
+
+💍 *FUNCTIONS*
+
+${functionText}
+
+━━━━━━━━━━━━━━━━━━
+
+📦 *PACKAGE*
+
+${packageSelected}
+
+👥 Guests: ${guests}
+
+📞 Preferred Contact: ${contact}
+
+━━━━━━━━━━━━━━━━━━
+
+📝 *SPECIAL REQUIREMENTS*
+
+${message || "No additional details"}
+
+━━━━━━━━━━━━━━━━━━
+
+Please let me know the availability
+for my wedding date and the next steps.
+
+Thank you ❤️
+
+— Saatvachan Wedding Website`;
+
+
+        document
+        .getElementById("success")
+        .style.display = "block";
+
+
+        const whatsappURL =
+            "https://wa.me/" +
+            whatsappNumber +
+            "?text=" +
+            encodeURIComponent(
+                whatsappMessage
+            );
+
+
+        setTimeout(
+            function(){
+
+                window.open(
+                    whatsappURL,
+                    "_blank"
+                );
+
+            },
+            700
+        );
+
+    }
+);
+
+</script>
+
+</body>
+</html>
+```
